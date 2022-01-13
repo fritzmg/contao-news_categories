@@ -26,7 +26,7 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['newscategories'] = [
     'options' => ['manage'],
     'reference' => &$GLOBALS['TL_LANG']['tl_user']['newscategoriesRef'],
     'eval' => ['multiple' => true, 'tl_class' => 'clr'],
-    'sql' => ['type' => 'string', 'length' => 32, 'default' => ''],
+    'sql' => ['type' => 'blob', 'notnull' => false],
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['newscategories_roots'] = [
